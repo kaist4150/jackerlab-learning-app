@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* AdSense containment */
+.ad-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.ad-container ins.adsbygoogle {
+  max-width: 100% !important;
+  width: 100% !important;
+}

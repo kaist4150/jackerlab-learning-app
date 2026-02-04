@@ -34,10 +34,13 @@ export default function AdSense({
   }, []);
 
   return (
-    <div className={`ad-container ${className}`}>
+    <div
+      className={`ad-container overflow-hidden max-w-full ${className}`}
+      style={{ contain: 'layout inline-size' }}
+    >
       <ins
         className="adsbygoogle"
-        style={style}
+        style={{ ...style, display: 'block', maxWidth: '100%', width: '100%' }}
         data-ad-client="ca-pub-4828862970866548"
         data-ad-slot={slot}
         data-ad-format={format}

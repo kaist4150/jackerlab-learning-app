@@ -57,7 +57,7 @@ export default function RootLayout({
       >
         <div className="min-h-screen flex flex-col">
           <div className="flex-1">{children}</div>
-          <div className="p-4">
+          <div className="p-4 flex justify-center">
             <AdBannerBottom slot="9727264203" />
           </div>
         </div>
