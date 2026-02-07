@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
 import { AdSenseScript, AdBannerBottom } from "@/components/ads";
 import { GoogleAnalytics, SiteVerification } from "@/components/analytics";
 
@@ -55,11 +56,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="min-h-screen flex flex-col">
-          <div className="flex-1">{children}</div>
-          <div className="p-4 flex justify-center">
-            <AdBannerBottom slot="9727264203" />
-          </div>
+        <div className="flex min-h-screen">
+          <Navigation />
+          <main className="flex-1 bg-gray-50 pt-14 lg:pt-0">
+            <div className="p-6 lg:p-8">
+              {children}
+            </div>
+            <div className="p-6 lg:p-8 pt-0 flex justify-center">
+              <AdBannerBottom slot="9727264203" />
+            </div>
+          </main>
         </div>
       </body>
     </html>
