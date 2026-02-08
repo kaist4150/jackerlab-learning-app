@@ -58,12 +58,12 @@ export default function RootLayout({
       >
         <div className="flex min-h-screen">
           <Navigation />
-          <main className="flex-1 bg-gray-50 pt-14 lg:pt-0">
-            <div className="p-6 lg:p-8">
+          <main className="flex-1 min-w-0 w-0 p-6 lg:p-8 pt-20 lg:pt-8 bg-gray-50 overflow-x-hidden">
+            <div className="max-w-full">
               {children}
-            </div>
-            <div className="p-6 lg:p-8 pt-0 flex justify-center">
-              <AdBannerBottom slot="9727264203" />
+              <div className="flex justify-center mt-8">
+                <AdBannerBottom slot="9727264203" />
+              </div>
             </div>
           </main>
         </div>
