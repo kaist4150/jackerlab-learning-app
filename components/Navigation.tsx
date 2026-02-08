@@ -7,46 +7,80 @@ import {
   GraduationCap,
   Menu,
   X,
-  Home,
   Globe,
   Code,
   Atom,
-  Database,
   FileCode,
   Braces,
+  Wind,
+  Gamepad2,
+  Binary,
+  Database,
+  Blocks,
+  GitBranch,
+  BarChart3,
+  TrendingUp,
+  Box,
+  Palette,
+  Music,
+  Orbit,
+  Sparkles,
+  Glasses,
+  Brain,
+  BookType,
 } from 'lucide-react';
 
 const menuItems = [
   {
-    category: '홈',
-    items: [
-      { name: '전체 과정', path: '/', icon: Home },
-    ],
-  },
-  {
-    category: '웹 기초',
+    category: '웹 개발',
     items: [
       { name: 'HTML & CSS', path: '/courses/html-css', icon: Globe },
-      { name: 'JavaScript', path: '/courses/javascript', icon: FileCode },
-    ],
-  },
-  {
-    category: '프레임워크',
-    items: [
       { name: 'React', path: '/courses/react', icon: Atom },
+      { name: 'Vue.js', path: '/courses/vue', icon: Wind },
     ],
   },
   {
     category: '프로그래밍',
     items: [
-      { name: 'Python', path: '/courses/python', icon: Code },
+      { name: 'JavaScript', path: '/courses/javascript', icon: FileCode },
       { name: 'TypeScript', path: '/courses/typescript', icon: Braces },
+      { name: 'Python', path: '/courses/python', icon: Code },
+      { name: 'Go', path: '/courses/go', icon: Wind },
+      { name: 'Lua', path: '/courses/lua', icon: Gamepad2 },
+      { name: 'C/C++', path: '/courses/cpp', icon: Binary },
+      { name: 'SQL', path: '/courses/sql', icon: Database },
+      { name: 'Blockly', path: '/courses/blockly', icon: Blocks },
     ],
   },
   {
-    category: '데이터',
+    category: '시각화',
     items: [
-      { name: 'SQL', path: '/courses/sql', icon: Database },
+      { name: 'Mermaid', path: '/courses/mermaid', icon: GitBranch },
+      { name: 'Chart.js', path: '/courses/chart', icon: BarChart3 },
+      { name: 'D3.js', path: '/courses/d3', icon: TrendingUp },
+    ],
+  },
+  {
+    category: '크리에이티브',
+    items: [
+      { name: 'Three.js', path: '/courses/threejs', icon: Box },
+      { name: 'p5.js', path: '/courses/p5', icon: Palette },
+      { name: 'Tone.js', path: '/courses/tone', icon: Music },
+      { name: 'Matter.js', path: '/courses/matter', icon: Orbit },
+      { name: 'GLSL', path: '/courses/glsl', icon: Sparkles },
+      { name: 'A-Frame', path: '/courses/aframe', icon: Glasses },
+    ],
+  },
+  {
+    category: 'AI/ML',
+    items: [
+      { name: 'TensorFlow.js', path: '/courses/tensorflow', icon: Brain },
+    ],
+  },
+  {
+    category: '기타',
+    items: [
+      { name: 'LaTeX', path: '/courses/latex', icon: BookType },
     ],
   },
 ];
