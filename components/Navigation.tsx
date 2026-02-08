@@ -8,13 +8,45 @@ import {
   Menu,
   X,
   Home,
+  Globe,
+  Code,
+  Atom,
+  Database,
+  FileCode,
+  Braces,
 } from 'lucide-react';
 
 const menuItems = [
   {
-    category: '대시보드',
+    category: '홈',
     items: [
-      { name: '홈', path: '/', icon: Home },
+      { name: '전체 과정', path: '/', icon: Home },
+    ],
+  },
+  {
+    category: '웹 기초',
+    items: [
+      { name: 'HTML & CSS', path: '/courses/html-css', icon: Globe },
+      { name: 'JavaScript', path: '/courses/javascript', icon: FileCode },
+    ],
+  },
+  {
+    category: '프레임워크',
+    items: [
+      { name: 'React', path: '/courses/react', icon: Atom },
+    ],
+  },
+  {
+    category: '프로그래밍',
+    items: [
+      { name: 'Python', path: '/courses/python', icon: Code },
+      { name: 'TypeScript', path: '/courses/typescript', icon: Braces },
+    ],
+  },
+  {
+    category: '데이터',
+    items: [
+      { name: 'SQL', path: '/courses/sql', icon: Database },
     ],
   },
 ];
@@ -75,7 +107,9 @@ export default function Navigation() {
               <ul className="space-y-1">
                 {section.items.map((item) => {
                   const Icon = item.icon;
-                  const isActive = pathname === item.path;
+                  const isActive = item.path === '/'
+                    ? pathname === '/'
+                    : pathname === item.path || pathname.startsWith(item.path + '/');
                   return (
                     <li key={item.path}>
                       <Link

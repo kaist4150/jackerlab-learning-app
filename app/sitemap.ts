@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://trading.jackerlab.com';
+  const baseUrl = 'https://learning.jackerlab.com';
 
   return [
     {

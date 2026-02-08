@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Learning - 학습 플랫폼",
+    default: "Learning - 기술 학습 플랫폼",
     template: "%s | JackerLab Learning",
   },
-  description: "프로그래밍, 웹개발, 데이터사이언스 학습 자료와 튜토리얼",
-  keywords: ["학습", "프로그래밍", "웹개발", "튜토리얼", "코딩", "교육"],
+  description: "프로그래밍, 웹개발 기술을 단계별 튜토리얼로 학습하세요. JavaScript, Python, React, SQL 등",
+  keywords: ["학습", "프로그래밍", "웹개발", "튜토리얼", "코딩", "교육", "JavaScript", "Python", "React"],
   authors: [{ name: "JackerLab" }],
   openGraph: {
     type: "website",
